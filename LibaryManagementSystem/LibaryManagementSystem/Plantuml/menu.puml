@@ -1,0 +1,44 @@
+﻿@startuml
+interface IMenu{
+	+ GetType(): string
+	+ ShowMenu(): void
+	+ ChoseMenu(): string
+}
+
+class MainMenu{
+	+ GetType(): string
+	+ ShowMenu(): void
+	+ ChoseMenu(): string
+}
+class MenuBooks{
+	+ GetType(): string
+	+ ShowMenu(): void
+	+ ChoseMenu(): string
+}
+class MenuReaders{
+	+ GetType(): string
+	+ ShowMenu(): void
+	+ ChoseMenu(): string
+}
+class MenuCategories{
+	+ GetType(): string
+	+ ShowMenu(): void
+	+ ChoseMenu(): string
+}
+class MenuPublishers{
+	+ GetType(): string
+	+ ShowMenu(): void
+	+ ChoseMenu(): string
+}
+class MenuAuthors{
+	+ GetType(): string
+	+ ShowMenu(): void
+	+ ChoseMenu(): string
+}
+ IMenu <|-- MainMenu
+ IMenu <|-- MenuBooks
+ IMenu <|-- MenuReaders
+ IMenu <|-- MenuCategories
+ IMenu <|-- MenuPublishers
+ IMenu <|-- MenuAuthors 
+@enduml

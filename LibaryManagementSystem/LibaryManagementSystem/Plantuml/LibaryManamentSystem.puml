@@ -1,0 +1,118 @@
+﻿@startuml
+interface IBooks{
+	+ BookID: string
+	+ BookName: string
+	+ YearPublished: string
+	+ Edition: string
+	+ Price: int
+	+ CategoryID:string
+	+ AuthorID:string
+	+ PublisherID:string
+}
+
+class Books{
+	+ BookID: string
+	+ BookName: string
+	+ YearPublished: string
+	+ Edition: string
+	+ Price: int
+	+ CategoryID:string
+	+ AuthorID:string
+	+ PublisherID:string
+	- booksIns : Books
+    + GetBooksIns() : Books
+	+ BooksClone(): Books
+	+ Add() : void
+	+ Update() : void
+	+ Delete(): void
+	+ View() : void
+	+ Search() : void
+	- AddBooks() : void
+	- UpdateBooks() : void
+	- DeleteBooks(): void
+	- ViewAll() : void
+	- SearchBooks() : void
+}
+
+class Categories{
+	+ CategoryName : string
+	+ Add() : void
+	+ Update() : void
+	+ Delete(): void
+	+ View() : void
+	+ Search() : void
+	- categoryIns : Categories
+    + GetCategoryIns() : Categories
+    + CategoriesClone() : Categories
+	- AddCategories() : void
+	- UpdateCategories() : void
+	- DeleteCategories(): void
+	- ViewAll() : void
+	- SearchCategories() : void
+}
+
+class Publishers{
+	+ PublishersName: string
+	+ Address: string
+	- publishersIns : Publishers
+    + GetPublishersIns() : Publishers
+    + PublishersClone() : Publishers
+	+ Add() : void
+	+ Update() : void
+	+ Delete(): void
+	+ View() : void
+	+ Search() : void
+	- AddPublishers() : void
+	- UpdatePublishers() : void
+	- DeletePublishers(): void
+	- ViewAll() : void
+	- SearchPublishers() : void
+}
+
+interface IPerson{
+	+ DateofBirth: string
+	+ Email: string
+	+ Phone: string
+	+ Address: string
+}
+class Person{
+	+ DateofBirth: string
+	+ Email: string
+	+ Phone: string
+	+ Address: string
+}
+
+class Readers{
+	+ ReaderID: string
+	+ ReaderName: string
+	- readersIns : Readers
+    + GetReadersIns() : Readers
+    + ReadersClone() : Readers
+	- AddReaders() : void
+	- UpdateReaders() : void
+	- DeleteReaders(): void
+	- ViewAll() : void
+	- SearchReaders() : void
+}
+class Authors{
+	+ AuthorName: string
+	- authorsIns : Authors
+    + GetAuthorsIns() : Authors
+    + AuthorsClone() : Authors
+	- AddAuthors() : void
+	- UpdateAuthors() : void
+	- DeleteAuthors(): void
+	- ViewAll() : void
+	- SearchAuthors() : void
+}
+
+IBooks <|-- Books
+Books "*" -up- "1" Categories
+Books "*" -left-- "1" Publishers
+Person <|-- Readers
+IPerson <|-right- Person
+
+Person <|-- Authors
+Books "*" -right-- "1" Authors
+
+@enduml
