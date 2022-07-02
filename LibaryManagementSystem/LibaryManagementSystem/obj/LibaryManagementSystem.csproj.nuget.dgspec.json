@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\UNIVERSITY_OF_GREENWICH\\1651 - ADVANCED PROGRAMMING\\LibaryManagementSystem\\LibaryManagementSystem\\LibaryManagementSystem.csproj": {}
+    "E:\\GitHub\\LibraryManagementSystem\\LibaryManagementSystem\\LibaryManagementSystem\\LibaryManagementSystem.csproj": {}
   },
   "projects": {
-    "E:\\UNIVERSITY_OF_GREENWICH\\1651 - ADVANCED PROGRAMMING\\LibaryManagementSystem\\LibaryManagementSystem\\LibaryManagementSystem.csproj": {
+    "E:\\GitHub\\LibraryManagementSystem\\LibaryManagementSystem\\LibaryManagementSystem\\LibaryManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\UNIVERSITY_OF_GREENWICH\\1651 - ADVANCED PROGRAMMING\\LibaryManagementSystem\\LibaryManagementSystem\\LibaryManagementSystem.csproj",
+        "projectUniqueName": "E:\\GitHub\\LibraryManagementSystem\\LibaryManagementSystem\\LibaryManagementSystem\\LibaryManagementSystem.csproj",
         "projectName": "LibaryManagementSystem",
-        "projectPath": "E:\\UNIVERSITY_OF_GREENWICH\\1651 - ADVANCED PROGRAMMING\\LibaryManagementSystem\\LibaryManagementSystem\\LibaryManagementSystem.csproj",
+        "projectPath": "E:\\GitHub\\LibraryManagementSystem\\LibaryManagementSystem\\LibaryManagementSystem\\LibaryManagementSystem.csproj",
         "packagesPath": "C:\\Users\\luanlc\\.nuget\\packages\\",
-        "outputPath": "E:\\UNIVERSITY_OF_GREENWICH\\1651 - ADVANCED PROGRAMMING\\LibaryManagementSystem\\LibaryManagementSystem\\obj\\",
+        "outputPath": "E:\\GitHub\\LibraryManagementSystem\\LibaryManagementSystem\\LibaryManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\luanlc\\AppData\\Roaming\\NuGet\\NuGet.Config",
